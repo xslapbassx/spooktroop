@@ -7,8 +7,8 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 h1 {
     display: flex; 
@@ -45,6 +45,7 @@ h2 {
     display: flex;
     margin-top: 40px;
     margin-right: auto;
+    margin-bottom: auto;
     margin-left: auto;
     border-radius: 3px;
     justify-content: center;
@@ -55,15 +56,17 @@ h2 {
     font-family: “Open Sans”, sans-serif;
 }
 p {
-    background-color: rgba(8, 0, 0, 0.925);
+    background-color: rgba(8, 0, 0, 0.973);
     color: rgba(224, 155, 128, 0.603); 
     display: flex;
     justify-content: center;
     margin: auto;
     margin-top: 40px;
+    width: 600px;
+    line-height: 30px;
     font-family: “Open Sans”, sans-serif;
     font-style: italic;
-    font-size: 18px;
+    font-size: 15px;
     padding: 10px;
     border-radius: 5px;
 }
@@ -75,19 +78,7 @@ form {
     width: 600px, auto;
     height: 250px;
     }
-pp {
-    background-color: rgba(8, 0, 0, 0.925);
-    color: rgba(224, 155, 128, 0.603); 
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    margin-top: 10px;
-    font-family: “Open Sans”, sans-serif;
-    font-style: italic;
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 5px;
-}
+
 textarea {
     background-color: rgba(8, 0, 0, 0.925);
     color: white;
