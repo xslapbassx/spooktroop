@@ -7,7 +7,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto;
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -45,7 +44,7 @@ h1 {
 }
 h2 {
     display: flex;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-right: auto;
     margin-bottom: auto;
     margin-left: auto;
@@ -63,7 +62,7 @@ p {
     display: flex;
     justify-content: center;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 10px;
     width: fit-content;
     line-height: 30px;
     font-family: “Open Sans”, sans-serif;
@@ -76,12 +75,15 @@ form {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin: auto;
-    width: 600px, auto;
-    height: 250px;
+    justify-content: center;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
     }
 
-textarea {
+.form-control {
     background-color: rgba(8, 0, 0, 0.925);
     color: white;
+    font-family:'Courier New', Courier, monospace;
 }

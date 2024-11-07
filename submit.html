@@ -25,17 +25,21 @@
           Anonymously submit your own story
       </p>
           
-      <form id="storyForm">
-        <label for ></label>
-          <textarea id="title" placeholder="Title..."></textarea>
+      <form class=container id="storyForm" method="post" action="/">  
+        <div class="form-group" >
+          <input class="form-control" type="text" name="title" id="title" placeholder="Title...">
+        </div>
           <br></br>
-          <textarea id="story" name="story" placeholder="Tell you tale..." rows="10" cols="50"></textarea>
+        <div class="form-group">
+          <textarea class="form-control" name="content" placeholder="Tell you tale..." rows="10" cols="40"></textarea>
+        </div>
           <br></br>
-          <input type="submit" id="submit" name="submit" value="Submit">
+          <button type="submit" id="submit" name="submit" value="Submit">Throw yours on the fire</button>
       </form>      
            
       
-      
+      <script href="spooktroop.js"></script>  
+      <script href="server.js"></script>         
 </body>
 
 

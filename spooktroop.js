@@ -6,3 +6,6 @@
 //Access submitted stories via an archive
     //stories will be displayed by title in a container
     //on click of title, the story gets displayed
+    curl -X 'GET' \
+    'https://openlibrary.org/subjects/Paranormal.json?details=true' \
+    -H 'accept: application/json'

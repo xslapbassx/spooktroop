@@ -1,33 +1,33 @@
-const express = require('express');
-   const bodyParser = require('body-parser');
-   const MongoClient = require('mongodb').MongoClient;
+const express = require("express");
+const app = express();
+const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
 
-   const app = express();
-   const port = 3000;
+app.use(bodyParser.urlencoded({extended: true}));
 
-   app.use(bodyParser.urlencoded({ extended: true }));
-   app.use(bodyParser.json());
+mongoose.connect("mongodb+srv://michaelthomasfrancis:rjt6z0G7VVjzr0SP@cluster0.alu8q.mongodb.net/stories");
 
-   // Replace with your MongoDB connection string
-   const uri = "mongodb+srv://michaelthomasfrancis:rjt6z0G7VVjzr0SP@cluster0.alu8q.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"; 
-   const client = new MongoClient(uri);
+//create a data schema
+const storiesSchema = {
+    title: String,
+    content: String
+}
 
-   app.post('/submit-form', async (req, res) => {
-       try {
-           await client.connect();
-           const db = client.db('archive');
-           const collection = db.collection('stories');
+const Story = mongoose.model("Story", storiesSchema);
 
-           const result = await collection.insertOne(req.body);
-           res.send('Data inserted successfully!');
-       } catch (err) {
-           console.error(err);
-           res.status(500).send('Error inserting data');
-       } finally {
-           await client.close();
-       }
-   });
+app.get("/", function(req, res) {
+    res.sendFile(__dirname + "/submit.html")
+})
 
-   app.listen(port, () => {
-       console.log(`Server listening on port ${port}`);
-   });
+app.post("/", function(req, res) {
+    let newNote = new Story({
+        title: req.body.title,
+        content: req.body.content
+    });
+    newStory.save();
+    res.redirect('/');
+})
+
+app.listen(3000, function() {
+    console.log("server is running on 3000");
+})
