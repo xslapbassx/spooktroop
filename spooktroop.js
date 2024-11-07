@@ -6,4 +6,3 @@
 //Access submitted stories via an archive
     //stories will be displayed by title in a container
     //on click of title, the story gets displayed
-//
