@@ -15,12 +15,14 @@ const storiesSchema = {
 
 const Story = mongoose.model("Story", storiesSchema);
 
+app.use(express.static(__dirname + '/public'));
+
 app.get("/", function(req, res) {
     res.sendFile(__dirname + "/submit.html")
 })
 
 app.post("/", function(req, res) {
-    let newNote = new Story({
+    let newStory = new Story({
         title: req.body.title,
         content: req.body.content
     });
