@@ -1,11 +1,17 @@
-//Function to send submitted stories to database
-   // let story = user submitted story;
-    //story gets sent to database after submit button is clicked.
-    //a thank you message is displayed
+fetch("mongodb+srv://michaelthomasfrancis:rjt6z0G7VVjzr0SP@cluster0.alu8q.mongodb.net/stories")
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+    })
+    .catch(error => {
+        console.error("Error", error);
+    });
 
-//Access submitted stories via an archive
-    //stories will be displayed by title in a container
-    //on click of title, the story gets displayed
-   // curl -X 'GET' \
-  //  'https://openlibrary.org/subjects/Paranormal.json?details=true' \
-   // -H 'accept: application/json'
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const headerLinks = document.querySelector('.header-links');
+
+    hamburgerMenu.addEventListener('click', function () {
+        headerLinks.classList.toggle('show');
+    });
+});

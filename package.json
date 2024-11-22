@@ -2,24 +2,11 @@
   "name": "spooktroop",
   "version": "1.0.0",
   "description": "This is an ongoing project that will be the capstone project for a class. This is aimed to be a  collection of anonymously submitted paranormal stories and keep an archive that can be read by whoever visits the site.",
-  "main": "spooktroop.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.20.3",
-    "express": "^4.21.1",
-    "it": "^0.2.2",
-    "mongodb": "^6.10.0",
-    "mongoose": "^8.8.2",
-    "node": "^18.20.5",
-    "node.js": "^0.0.1-security",
-    "nodemon": "^3.1.7"
-  },
-  "devDependencies": {
-    "coffee-script": "^1.3.3"
-  }
+  "license": "ISC"
 }
