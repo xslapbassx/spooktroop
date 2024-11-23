@@ -7,11 +7,11 @@ fetch("mongodb+srv://michaelthomasfrancis:rjt6z0G7VVjzr0SP@cluster0.alu8q.mongod
         console.error("Error", error);
     });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
-    const headerLinks = document.querySelector('.header-links');
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburgerMenu = document.querySelector(".hamburger-menu");
+    const headerLinks = document.querySelector(".header-links");
 
-    hamburgerMenu.addEventListener('click', function () {
-        headerLinks.classList.toggle('show');
+    hamburgerMenu.addEventListener("click", function () {
+        headerLinks.classList.toggle("show");
     });
 });

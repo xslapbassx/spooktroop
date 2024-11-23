@@ -7,14 +7,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
     h1 {
         display: flex; 
         margin: 10 0 10 0;
         color: rgba(196, 98, 52, 0.61);
         justify-content: center;
+        margin-right: auto;
+        margin-left:auto;
+        width: fit-content;
         font-family: “Open Sans”, sans-serif;
         color: #ffffffa2;
         text-shadow: 0px -1px 1px #ffffff, 0px -2px 10px #FF3, 0px -10px 20px #F90, 0px -20px 40px #C33;
@@ -57,10 +60,10 @@ body {
             display: none;
             flex-direction: column;
             position: absolute;
-            top: 4rem;
+            top: 10rem;
             right: 0.5rem;
             background-color: rgba(8, 0, 0, 0.925);
-            width: 75%;
+            width: 50%;
         }
         .header-links.show {
             display: flex;
@@ -85,7 +88,7 @@ body {
         margin-left: auto;
         border-radius: 3px;
         justify-content: center;
-        width: 300px;
+        width: fit-content;
         background-color: rgba(8, 0, 0, 0.925);
         color:rgba(196, 98, 52, 0.61);
         padding: 10px;
@@ -111,6 +114,7 @@ body {
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: center;
+        width: fit-content;
         margin-top: auto;
         margin-right: auto;
         margin-bottom: 20px;
@@ -121,4 +125,5 @@ body {
         background-color: rgba(8, 0, 0, 0.925);
         color: white;
         font-family:'Courier New', Courier, monospace;
+        width: fit-content;
     }
