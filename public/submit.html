@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="/css/spooktroop.css">
-
+</head>
 <body>
   <h1>Throw one on the Fire</h1>
   
@@ -36,14 +36,14 @@
       
   <form class=container id="storyForm" method="post" action="/">  
     <div class="form-group" >
-      <input class="form-control" type="text" name="title" id="title" placeholder="Title...">
+      <input class="form-control" type="text" name="title" id="title" placeholder="Title..." required>
     </div>
       <br></br>
     <div class="form-group">
-      <textarea class="form-control" name="content" placeholder="Tell your tale..." rows="10" cols="40"></textarea>
+      <textarea class="form-control" name="content" placeholder="Tell your tale..." rows="10" cols="40" required></textarea>
     </div>
       <br></br>
-      <button type="submit" id="submit" name="submit" value="Submit">Throw yours on the fire</button>
+      <button type="submit" id="submit">Throw yours on the fire</button>
   </form>      
            
       
@@ -51,6 +51,6 @@
 </body>
 
 
-</head>
+
 
 </html>
