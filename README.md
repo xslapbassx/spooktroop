@@ -3,6 +3,8 @@ This is aimed to be a collection of anonymously submitted paranormal stories and
 1. Create a node.js web server using a modern framework such as Express.js or Fastify.  Serve at least one route that your app uses (must serve more than just the index.html file).
 2. Interact with a database to store and retrieve information (e.g. MySQL, MongoDB, etc).
 3. Create a form and store the submitted values using an external API (e.g. a contact form, survey, etc).
+4. Use arrays, objects, sets or maps to store and retrieve information that is displayed in your app.
+
 
 Here's the steps to run the project:
 1. Clone github repo.
