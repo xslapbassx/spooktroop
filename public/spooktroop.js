@@ -10,11 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", () => {
     const storiesContainer = document.getElementById("stories-container");
 
-    // Fetch stories from the server
     fetch("/stories")
         .then((response) => response.json())
         .then((stories) => {
-            storiesContainer.innerHTML = ""; // Clear the container
+            storiesContainer.innerHTML = ""; 
             stories.forEach((story) => {
                 const storyDiv = document.createElement("div");
                 storyDiv.classList.add("story");
